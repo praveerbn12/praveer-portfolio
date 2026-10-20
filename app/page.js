@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -27,7 +28,6 @@ const projects = [
     badge: "Flagship Project",
     featured: true,
   },
-
   {
     title: "Hotel Review System",
     category: "Backend / Distributed Systems",
@@ -54,7 +54,6 @@ const projects = [
     badge: "Flagship Project",
     featured: true,
   },
-
   {
     title: "ProAg Producer Analytics",
     category: "Data Engineering / Decision Intelligence",
@@ -77,7 +76,6 @@ const projects = [
     demo: "",
     badge: "Competition Runner-Up",
   },
-
   {
     title: "EveryWear",
     category: "Full-Stack / Product",
@@ -100,7 +98,6 @@ const projects = [
     demo: "https://everywear-psi.vercel.app",
     badge: "Best in Show · Audience Favorite",
   },
-
   {
     title: "Medelite Facility Snapshot",
     category: "Data Product / API Integration",
@@ -121,7 +118,6 @@ const projects = [
     github: "https://github.com/praveerbn12/medelite-facility-snapshot",
     demo: "",
   },
-
   {
     title: "NYC Yellow Taxi Analytics",
     category: "Data Engineering / BI",
@@ -143,7 +139,6 @@ const projects = [
     github: "https://github.com/praveerbn12/nyc-yellow-taxi-analytics",
     demo: "",
   },
-
   {
     title: "Employment Management System",
     category: "Backend API / Django",
@@ -198,7 +193,7 @@ const skills = [
     icon: "BE",
     title: "Backend & Distributed Systems",
     items:
-      "Spring Boot, Spring Cloud, FastAPI, Django REST Framework, REST APIs, Microservices, Eureka, Feign",
+      "Spring Boot, Spring Cloud, FastAPI, Django REST Framework, Python Backend Services, REST APIs, Enterprise API Integration, Token Authentication, Microservices, Eureka, Feign",
   },
   {
     icon: "AI",
@@ -210,7 +205,7 @@ const skills = [
     icon: "EV",
     title: "Data & Messaging",
     items:
-      "Kafka / Redpanda, Pandas, Snowflake, ETL / ELT, Dimensional Modeling, Event-Driven Systems",
+      "Kafka / Redpanda, Pandas, Snowflake, ETL / ELT, Scheduled Ingestion, Cross-Source Data Validation, Dimensional Modeling, Event-Driven Systems",
   },
   {
     icon: "DB",
@@ -357,7 +352,6 @@ function ExperienceProject({ title, dates, bullets }) {
     <div className="rounded-2xl border border-sky-100 bg-sky-50 p-5">
       <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
         <h4 className="font-bold text-slate-950">{title}</h4>
-
         <span className="text-sm text-slate-500">{dates}</span>
       </div>
 
@@ -408,24 +402,6 @@ export default function Portfolio() {
             >
               Skills
             </a>
-
-            <a
-              className="text-sky-700 hover:text-sky-800"
-              href="/resume-software.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              SWE Resume ↗
-            </a>
-
-            <a
-              className="hidden text-sky-700 hover:text-sky-800 md:inline"
-              href="/resume-data.pdf"
-              target="_blank"
-              rel="noreferrer"
-            >
-              DE Resume ↗
-            </a>
           </div>
         </div>
       </nav>
@@ -448,7 +424,7 @@ export default function Portfolio() {
           className="max-w-4xl"
         >
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-sky-600">
-            Software Engineer · Backend Systems · Applied AI · Data Engineering
+            Forward Deployed Engineer · Backend Systems · Applied AI · Data Engineering
           </p>
 
           <h1 className="text-5xl font-bold tracking-tight text-slate-950 md:text-7xl">
@@ -461,29 +437,13 @@ export default function Portfolio() {
           </p>
 
           <p className="mt-5 max-w-3xl text-base leading-7 text-slate-600 md:text-lg">
-            Software Engineer with 2+ years of professional experience. MS in
-            Information Systems at Syracuse University · Graduating Dec 2026 ·
-            Open to full-time opportunities.
+            Software Engineer and Forward Deployed Engineer with 3+ years of
+            professional experience. MS in Information Systems at Syracuse
+            University · Graduating Dec 2026 · Open to full-time opportunities.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <ButtonLink href="#projects">View Projects</ButtonLink>
-
-            <ButtonLink
-              href="/resume-software.pdf"
-              variant="secondary"
-              target="_blank"
-            >
-              Software Engineering Resume ↗
-            </ButtonLink>
-
-            <ButtonLink
-              href="/resume-data.pdf"
-              variant="secondary"
-              target="_blank"
-            >
-              Data Engineering Resume ↗
-            </ButtonLink>
 
             <ButtonLink
               href="https://github.com/praveerbn12"
@@ -528,25 +488,31 @@ export default function Portfolio() {
 
           <div className="mt-7 max-w-4xl space-y-5 text-lg leading-8 text-slate-600">
             <p>
-              I&apos;m a software engineer with 2+ years of professional
-              experience building backend systems with Java, Spring Boot,
-              PostgreSQL, GCP, Redis, REST APIs, and event-driven integrations.
-              At Coditas, I worked on production systems supporting thousands of
-              daily orders and financial data pipelines processing 50K+ records
-              per day.
+              I&apos;m a software engineer and forward deployed engineer with
+              3+ years of experience building production backend systems
+              and client-facing solutions. At iConsult Collaborative, I
+              translate operational needs into working software, integrating
+              enterprise platforms through Python REST services, PostgreSQL,
+              and automated data ingestion workflows.
+            </p>
+
+            <p>
+              Previously at Coditas, I built backend systems using Java,
+              Spring Boot, PostgreSQL, GCP, Redis, and event-driven
+              integrations, supporting thousands of daily orders and
+              financial data pipelines processing 50K+ records per day.
             </p>
 
             <p>
               I&apos;m currently completing my MS in Information Systems at
-              Syracuse University and expanding into applied AI and data-intensive
-              systems — building projects around AI agents, tool calling,
-              event-driven architecture, evaluation, distributed systems, and
-              production reliability.
+              Syracuse University and building applied AI and data-intensive
+              systems around AI agents, tool calling, distributed systems,
+              evaluation, and production reliability.
             </p>
 
             <p className="font-medium text-slate-800">
-              I enjoy engineering systems where software, data, and AI meet real
-              operational problems.
+              I enjoy engineering systems where software, data, and AI
+              meet real operational problems.
             </p>
           </div>
         </div>
@@ -561,9 +527,41 @@ export default function Portfolio() {
           <SectionHeading
             eyebrow="Experience"
             title="Production engineering, not just portfolio code."
-            description="Backend and platform work across e-commerce, healthcare reporting, and internal enterprise systems."
+            description="Client-embedded delivery, enterprise integrations, backend platforms, and production systems across operations, e-commerce, and healthcare."
           />
 
+          {/* iCONSULT COLLABORATIVE */}
+          <div className="mt-8 rounded-2xl border border-sky-200 bg-white p-6 shadow-lg shadow-sky-100/70 md:p-8">
+            <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-950">
+                  Forward Deployed Engineer
+                </h3>
+
+                <p className="mt-1 text-slate-600">
+                  iConsult Collaborative · New York, USA
+                </p>
+              </div>
+
+              <p className="text-sm font-medium text-slate-500">
+                Jan 2026 — Present
+              </p>
+            </div>
+
+            <div className="mt-7 grid gap-5">
+              <ExperienceProject
+                title="Enterprise Integrations & Operations Intelligence"
+                dates="Jan 2026 — Present"
+                bullets={[
+                  "Embedded with client teams to translate operational needs into working software, building Python backend services that integrate Therap, Paycom, and Sage through REST APIs into a normalized PostgreSQL schema and unified query layer.",
+                  "Owned integrations end to end, implementing token-based authentication, pagination, exponential-backoff retries, scheduled ingestion, and cross-source data-integrity validation to maintain consistent client data.",
+                  "Delivered a full-stack multi-KPI monitoring dashboard with state- and service-line drilldowns over PostgreSQL data, replacing manual reporting in supervisors’ daily workflow.",
+                ]}
+              />
+            </div>
+          </div>
+
+          {/* CODITAS SOLUTIONS */}
           <div className="mt-8 rounded-2xl border border-sky-100 bg-white p-6 shadow-lg shadow-sky-100/70 md:p-8">
             <div className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
               <div>
@@ -644,8 +642,8 @@ export default function Portfolio() {
                 </h3>
 
                 <p className="mt-1 text-sm text-slate-600">
-                  Additional cloud, time-series, machine learning, and analytics
-                  work is available on GitHub.
+                  Additional cloud, time-series, machine learning, and
+                  analytics work is available on GitHub.
                 </p>
               </div>
 
@@ -703,7 +701,9 @@ export default function Portfolio() {
                   </h3>
                 </div>
 
-                <p className="leading-7 text-slate-600">{skill.items}</p>
+                <p className="leading-7 text-slate-600">
+                  {skill.items}
+                </p>
               </div>
             ))}
           </div>
@@ -759,22 +759,6 @@ export default function Portfolio() {
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <ButtonLink href="mailto:pbyndoor@syr.edu">
               Email Me
-            </ButtonLink>
-
-            <ButtonLink
-              href="/resume-software.pdf"
-              variant="secondary"
-              target="_blank"
-            >
-              SWE Resume ↗
-            </ButtonLink>
-
-            <ButtonLink
-              href="/resume-data.pdf"
-              variant="secondary"
-              target="_blank"
-            >
-              DE Resume ↗
             </ButtonLink>
 
             <ButtonLink
